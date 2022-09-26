@@ -5,6 +5,7 @@ Code to read :
 	-CO Sensor.
 	-CO2 Sensor.
 	-PM10 & PM2.5 & PM1 Sensor.
+	-Temperature & Pressure & Humidity Sensor
 
 
 Code write with Waspmote Pro IDE.
