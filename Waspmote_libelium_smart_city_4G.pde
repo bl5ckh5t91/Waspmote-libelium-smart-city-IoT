@@ -11,9 +11,9 @@ char password[] = "";
 ///////////////////////////////////////
 // SERVER settings
 ///////////////////////////////////////
-char host[] = "your host";
-uint16_t port = 80;
-char resource[] = "";
+char host[] = "41.242.21.122";
+uint16_t port = 8000;
+char resource[] = "/statuses";
 ///////////////////////////////////////
 // Sensors variables
 int error;
@@ -74,12 +74,10 @@ float PM10;
   PM10=PM._PM10;
   PM.OFF();
   char temp[4]="";
-  char data[200]="deviceId=37801CE819623C0E&no=";
-
+  char data[200]="deviceId=4B2B1CEB19623C5B.&no=";
   Utils.float2String (NO, temp, 3);
   strcat(data,temp);
   strcat(data,"&no2=");
-
   Utils.float2String (NO2, temp, 3);
   strcat(data,temp);
   strcat(data,"&co=");
@@ -150,8 +148,9 @@ float PM10;
   ////////////////////////////////////////////////
   // 4. Sleep
   ////////////////////////////////////////////////
-  USB.println(F("4. Enter deep sleep..."));
-  PWR.deepSleep("00:00:00:10", RTC_OFFSET, RTC_ALM1_MODE1, ALL_OFF);
+  //USB.println(F("4. Enter deep sleep..."));
+  //PWR.deepSleep("00:00:00:10", RTC_OFFSET, RTC_ALM1_MODE1, ALL_OFF);
+  delay(1180000);
   USB.ON();
   USB.println(F("5. Wake up!!\n\n"));
 }
