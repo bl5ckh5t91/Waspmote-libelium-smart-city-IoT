@@ -11,8 +11,8 @@ char password[] = "";
 ///////////////////////////////////////
 // SERVER settings
 ///////////////////////////////////////
-char host[] = "41.242.21.122";
-uint16_t port = 8000;
+char host[] = "yout host";
+uint16_t port = 80;
 char resource[] = "/statuses";
 ///////////////////////////////////////
 // Sensors variables
